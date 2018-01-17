@@ -1,0 +1,27 @@
+<h1>Dojo Mail</h1>
+
+  <div [ngStyle]="{'display':'inline-block', 'margin-right': '30px'}">
+    <h3>Emails</h3>
+    <div *ngFor= "let email of emails">
+    <p>{{email.from}}</p></div>
+  </div>
+
+  <div [ngStyle]="{'display':'inline-block', 'margin-right': '30px'}">
+    <h3>Importance</h3>
+    <div *ngFor= "let email of emails">
+    <p>{{email.importance}}</p></div>
+  </div>
+
+  <div [ngStyle]="{'display':'inline-block', 'margin-right': '30px'}">
+    <h3>Subject</h3>
+    <div *ngFor= "let email of emails">
+    <p>{{email.subject}}</p></div>
+  </div>
+
+  <div [ngStyle]="{'display':'inline-block', 'margin-right': '30px'}">
+    <h3>Content</h3><div *ngFor= "let email of emails">
+    <p>{{email.content}}</p></div>
+  </div>
+
+
+
